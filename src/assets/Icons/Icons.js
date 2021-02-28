@@ -76,7 +76,6 @@ const OverviewIcon = () => {
   )
 }
 
-
 export {
   SubsIcon,
   IdeaIcon,

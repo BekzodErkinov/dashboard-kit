@@ -4,8 +4,8 @@ const SidebarBtn = ({ icon, title }) => {
   return (
     <div>
       <button className="sidebar-btn">
-        {icon}
-        {title}
+        <div class="btn-icon">{icon}</div>
+        <span class="title">{title}</span>
       </button>
     </div>
   )

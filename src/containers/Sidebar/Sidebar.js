@@ -9,12 +9,52 @@ import {
   SettingIcon,
   SubsIcon, } from '../../assets/Icons/Icons'
 
-import '../Sidebar/Sidebar.scss'
+  import '../Sidebar/Sidebar.scss'
+  import MainLogo from '../../assets/images/logo.svg'
+
+  const sidebarBtnArr = [
+    {
+      title: 'Overview',
+      icon: <OverviewIcon/>,
+    },
+    {
+      title: 'Tickets',
+      icon: <TicketIcon/>,
+    },
+    {
+      title: 'Ideas',
+      icon: <IdeaIcon/>,
+    },
+    {
+      title: 'Contacts',
+      icon: <PeopleIcon/>,
+    },
+    {
+      title: 'Agents',
+      icon: <AgentIcon/>,
+    },
+    {
+      title: 'Articles',
+      icon: <ArticleIcon/>,
+    },
+    {
+      title: 'Settings',
+      icon: <SettingIcon/>,
+    },
+    {
+      title: 'Subscription',
+      icon: <SubsIcon/>,
+    },
+  ]
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h1><img src="https://img.icons8.com/cute-clipart/40/000000/d.png" alt="D logo"/> Dashboard Kit</h1>
+      <div className="logo-holder">
+        <img className="sidebar-logo" src={MainLogo} alt="Logo" />
+        <h1 class="sidebar-lead">Dashboard Kit</h1>
+      </div>
+
       <SidebarBtn icon={<OverviewIcon/>} title='Overview'/>
       <SidebarBtn icon={<TicketIcon/>} title='Tickets'/>
       <SidebarBtn icon={<IdeaIcon/>} title='Ideas'/>
