@@ -1,0 +1,17 @@
+.sidebar-btn {
+  color: #a4a6b3;
+  background: transparent;
+  display: flex;
+  width: 100%;
+  padding: 18px 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  &:hover {
+    background: rgba(159,162,180,0.08);
+    color: #dde2ff;
+  }
+}
