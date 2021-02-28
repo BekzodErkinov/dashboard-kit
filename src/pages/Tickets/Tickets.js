@@ -1,14 +1,13 @@
-import Sidebar from '../../containers/Sidebar/Sidebar'
+import Sidebar from '../../containers/Tickets/Sidebar/Sidebar'
+import TicketsConetent from '../../containers/Tickets/TicketsContent/TicketsContent'
 
 import './Tickets.scss'
 
 const Tickets = () => {
   return (
     <div className="tickets">
-      <Sidebar/>
-      <div class="content">
-        <h1>Tickets content</h1>
-      </div>
+      <Sidebar />
+      <TicketsConetent />
     </div>
   )
 }

@@ -15,9 +15,17 @@
   .btn-icon {
     margin-right: 20px;
   }
+  .sidebar-svg-icon {
+    fill: #9fa2b4;
+    opacity: 0.4;
+  }
   &:hover {
     color: #dde2ff;
     border-color: #dde2ff;
     background: rgba(159,162,180,0.08);
+    .sidebar-svg-icon {
+      fill: #dde2ff;
+      opacity: 1;
+    }
   }
 }

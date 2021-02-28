@@ -1,4 +1,4 @@
-import SidebarBtn from '../../components/SidebarBtn/SidebarBtn'
+import SidebarBtn from '../../../components/SidebarBtn/SidebarBtn'
 import {
   OverviewIcon,
   TicketIcon,
@@ -7,10 +7,10 @@ import {
   AgentIcon,
   ArticleIcon,
   SettingIcon,
-  SubsIcon, } from '../../assets/Icons/Icons'
+  SubsIcon, } from '../../../assets/Icons/Icons'
 
   import '../Sidebar/Sidebar.scss'
-  import MainLogo from '../../assets/images/logo.svg'
+  import MainLogo from '../../../assets/images/logo.svg'
 
   const sidebarBtnArr = [
     {
@@ -52,7 +52,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="logo-holder">
         <img className="sidebar-logo" src={MainLogo} alt="Logo" />
-        <h1 class="sidebar-lead">Dashboard Kit</h1>
+        <h1 className="sidebar-lead">Dashboard Kit</h1>
       </div>
 
       <SidebarBtn icon={<OverviewIcon/>} title='Overview'/>
