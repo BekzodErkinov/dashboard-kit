@@ -1,22 +1,48 @@
-import Tickets from "./pages/Tickets/Tickets"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route } from 'react-router-dom'
+import { useState } from 'react'
+
+// Containers
+import Sidebar from './containers/Sidebar/Sidebar'
+import Toolbar from './containers/Toolbar/Toolbar'
+// Pages
+import Ideas from './pages/Ideas/Ideas'
+import Agents from './pages/Agents/Agents'
+import Tickets from './pages/Tickets/Tickets'
+import Contacts from './pages/Contacts/Contacts'
+import Articles from './pages/Articles/Articles'
+import Overview from './pages/Overview/Overview'
+import Settings from './pages/Settings/Settings'
+import Subscription from './pages/Subscription/Subscription'
 
 function App() {
+  const [activePage, setActivePage] = useState('')
+
+  
   return (
-    <div className="App">
-      <Tickets />
-    </div>
+    <Router>
+      <div className="app">
+        <Sidebar activePage={activePage} setActivePage={setActivePage}/>
+        
+        <div className="content">
+          <Toolbar activePage={activePage} />
+
+          <Switch>
+            <Route path="/overview" component={Overview} />
+            <Route path="/tickets" component={Tickets} />
+            <Route path="/ideas" component={Ideas} />
+            <Route path="/contacts" component={Contacts} />
+            <Route path="/agents" component={Agents} />
+            <Route path="/articles" component={Articles} />
+            <Route path="/settings" component={Settings} />
+            <Route path="/subscription" component={Subscription} />
+          </Switch>
+        </div>
+      </div>
+    </Router>
   )
 }
 
 export default App
-
-/*
- * Ctrl + backspace       - Delete Previous Word cr
-
- * Shift + F9             - belgi qo'yib ketish | F9 - linega belgi qo'yish
- * Ctrl + P/E             - quick open
- * Ctrl + Shift + [ / ]   - Code folding
-
- * Ctrl + R               - Open recent
- * Ctrl + Shift + I       - Format file
-*/
