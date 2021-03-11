@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 
 import SidebarBtn from '../../components/SidebarBtn/SidebarBtn'
+// SVG Icons
+import MainLogo from '../../assets/images/logo.svg'
 import {
   SubsIcon,
   IdeaIcon,
@@ -10,44 +12,43 @@ import {
   ArticleIcon,
   SettingIcon,
   OverviewIcon, } from '../../assets/Icons/Icons'
+// SCSS
+import './Sidebar.scss'
 
-  import './Sidebar.scss'
-  import MainLogo from '../../assets/images/logo.svg'
-
-  const sidebarBtnArr = [
-    {
-      title: 'Overview',
-      icon: <OverviewIcon/>,
-    },
-    {
-      title: 'Tickets',
-      icon: <TicketIcon/>,
-    },
-    {
-      title: 'Ideas',
-      icon: <IdeaIcon/>,
-    },
-    {
-      title: 'Contacts',
-      icon: <PeopleIcon/>,
-    },
-    {
-      title: 'Agents',
-      icon: <AgentIcon/>,
-    },
-    {
-      title: 'Articles',
-      icon: <ArticleIcon/>,
-    },
-    {
-      title: 'Settings',
-      icon: <SettingIcon/>,
-    },
-    {
-      title: 'Subscription',
-      icon: <SubsIcon/>,
-    },
-  ]
+/*const sidebarBtnArr = [
+  {
+    title: 'Overview',
+    icon: <OverviewIcon/>,
+  },
+  {
+    title: 'Tickets',
+    icon: <TicketIcon/>,
+  },
+  {
+    title: 'Ideas',
+    icon: <IdeaIcon/>,
+  },
+  {
+    title: 'Contacts',
+    icon: <PeopleIcon/>,
+  },
+  {
+    title: 'Agents',
+    icon: <AgentIcon/>,
+  },
+  {
+    title: 'Articles',
+    icon: <ArticleIcon/>,
+  },
+  {
+    title: 'Settings',
+    icon: <SettingIcon/>,
+  },
+  {
+    title: 'Subscription',
+    icon: <SubsIcon/>,
+  },
+]*/
 
 const Sidebar = ({ activePage, setActivePage }) => {  
   return (

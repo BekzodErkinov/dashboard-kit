@@ -1,0 +1,52 @@
+.overview-wrap {
+  padding: 0 30px;
+  header {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    grid-area: '. . . .';
+    margin-bottom: 30px;
+    
+    button {
+      padding: 32px;
+      background: #fff;
+      border-radius: 8px;
+      border: 1px solid #DFE0EB;
+      transition: all 0.3s ease;
+
+      &:hover, &.active {
+        border: 1px solid #3751FF;
+        h3, span{
+          color: #3751FF;
+        }
+      }
+
+      h3, span {
+        letter-spacing: 0.2px;
+        font-weight: 700;
+        transition: all 0.3s ease;
+      }
+      h3 {
+        color: #9FA2B4;
+        font-size: 19px;
+        margin-bottom: 12px;
+      }
+      span {
+        color: #252733;
+        font-size: 40px;
+      }
+    }
+  }
+
+  main {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-area: '. .';
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #DFE0EB;
+  }
+}

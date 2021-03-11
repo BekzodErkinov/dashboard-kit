@@ -1,3 +1,4 @@
+// SCSS
 import './Overview.scss'
 
 // Images
@@ -8,27 +9,34 @@ const Overview = () => {
     <div>
       <div className="overview-wrap">
         <header>
-          <div className="about">
+          <button className="about">
             <h3>Unresolved</h3>
             <span>60</span>
-          </div>
-          <div className="about">
+          </button>
+          <button className="about active">
             <h3>Overdue</h3>
             <span>16</span>
-          </div>
-          <div className="about">
+          </button>
+          <button className="about">
             <h3>Open</h3>
             <span>43</span>
-          </div>
-          <div className="about">
+          </button>
+          <button className="about">
             <h3>On hold</h3>
             <span>64</span>
-          </div>
+          </button>
         </header>
 
         <main>
           <div className="diagrap">
-            <div className="diagram-caption"></div>
+            <div className="diagram-caption">
+              <h3 className="diagram-title">Today's trends</h3>
+              <div class="diagram-subtitle-wrap">
+                <p className="diagram-subtitle">as of 25 March 2021, 09:41 PM</p>
+                <span>Today</span>
+                <span>Yesterday</span>
+              </div>
+            </div>
             <img src={GrapghImg} alt="Graph" />
           </div>
           <div className="statistics">
@@ -57,6 +65,24 @@ const Overview = () => {
 
         <footer>
           <div className="unresolved-ticket">
+            <div className="unresolved-ticket-lead">
+              <div>
+                <h3>Unresolved ticket</h3>
+                <button>View details</button>
+              </div>
+              <div>
+                <p>Group: <span>Support</span></p>
+              </div>
+            </div>
+            <div className="unresolved-ticket-body">
+              <div className="item">
+                <p></p>
+                <span>4238</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="tasks">
             <div>
               <h3>Unresolved ticket</h3>
               <button>View details</button>
@@ -64,9 +90,6 @@ const Overview = () => {
             <div>
               <p>Group: <span>Support</span></p>
             </div>
-          </div>
-          <div className="unresolved-ticket">
-
           </div>
         </footer>
       </div>

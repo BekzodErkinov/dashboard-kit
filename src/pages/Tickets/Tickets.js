@@ -1,5 +1,5 @@
 import TicketItem from '../../components/TicketItem/TicketItem'
-
+// Images
 import SamSmithImg from '../../assets/images/UserPngImg/user-img-1.png'
 import MattDamonImg from '../../assets/images/UserPngImg/user-img-2.png'
 import TomCruiseImg from '../../assets/images/UserPngImg/user-img-3.png'
@@ -126,7 +126,6 @@ const Tickets = () => {
         </div>
       </div>
 
-      
       {infoListArr.map((user, i) => (
         <TicketItem
           status={user.status}

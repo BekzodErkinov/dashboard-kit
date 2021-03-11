@@ -1,8 +1,8 @@
+import { useState } from 'react'
 import {
   BrowserRouter as Router,
   Switch,
   Route } from 'react-router-dom'
-import { useState } from 'react'
 
 // Containers
 import Sidebar from './containers/Sidebar/Sidebar'
@@ -20,7 +20,6 @@ import Subscription from './pages/Subscription/Subscription'
 function App() {
   const [activePage, setActivePage] = useState('')
 
-  
   return (
     <Router>
       <div className="app">
