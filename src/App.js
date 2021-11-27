@@ -24,11 +24,12 @@ function App() {
     <Router>
       <div className="app">
         <Sidebar activePage={activePage} setActivePage={setActivePage}/>
-        
+
         <div className="content">
           <Toolbar activePage={activePage} />
 
           <Switch>
+            <Route path="/" component={Overview} exact />
             <Route path="/overview" component={Overview} />
             <Route path="/tickets" component={Tickets} />
             <Route path="/ideas" component={Ideas} />

@@ -1,3 +1,5 @@
+import './Subscription.scss'
+
 const Subscription = () => {
   return (
     <div>

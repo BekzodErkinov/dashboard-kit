@@ -12,6 +12,7 @@ import {
   ArticleIcon,
   SettingIcon,
   OverviewIcon, } from '../../assets/Icons/Icons'
+
 // SCSS
 import './Sidebar.scss'
 
@@ -50,7 +51,7 @@ import './Sidebar.scss'
   },
 ]*/
 
-const Sidebar = ({ activePage, setActivePage }) => {  
+const Sidebar = ({ activePage, setActivePage }) => {
   return (
     <div className="sidebar">
       <div className="logo-holder">
